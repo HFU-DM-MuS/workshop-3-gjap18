@@ -108,7 +108,7 @@ class MultipleCirclesBouncingPanel extends JPanel {
 		double deltaTime = time - lastFrameTime;
 		lastFrameTime = time;
 
-		for (int i = 1; i < numBalls; i++) {
+		for (int i = 0; i < numBalls; i++) {
 
 			currentX[i] = currentX[i] + (vX[i] * deltaTime);
 			currentY[i] = currentY[i] + (vY[i] * deltaTime);
