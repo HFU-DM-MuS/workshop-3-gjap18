@@ -125,7 +125,7 @@ class MultipleCirclesBouncingPanel extends JPanel {
 				currentX[i] = currentX[i] + 1;
 			}
 
-			if (currentY[i] >= Constants.WINDOW_HEIGHT) {
+			if (currentY[i] >= Constants.WINDOW_HEIGHT - diameter) {
 				// Object has hit the floor
 				vY[i] = -vY[i];
 				currentY[i] = currentY[i] - 1;
